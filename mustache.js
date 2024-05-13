@@ -640,6 +640,10 @@ Writer.prototype.renderPartial = function renderPartial (token, context, partial
   if (!partials) return;
   var tags = this.getConfigTags(config);
 
+  // Partial names beginning with an asterix are treated as a dynamic name
+  if (token[1].trim().startsWith('*')) {
+    token[1] = context.lookup(token[1].trim().substring(1).trim());
+  }
   var value = isFunction(partials) ? partials(token[1]) : partials[token[1]];
   if (value != null) {
     var lineHasNonSpace = token[6];
