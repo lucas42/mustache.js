@@ -641,7 +641,7 @@ Writer.prototype.renderPartial = function renderPartial (token, context, partial
   var tags = this.getConfigTags(config);
 
   // Partial names beginning with an asterix are treated as a dynamic name
-  if (token[1].trim().startsWith('*')) {
+  if (token[1].trim().substring(0, 1) === '*') {
     token[1] = context.lookup(token[1].trim().substring(1).trim());
   }
   var value = isFunction(partials) ? partials(token[1]) : partials[token[1]];
