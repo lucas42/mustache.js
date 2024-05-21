@@ -47,7 +47,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "chai": "^3.4.0",
+    "chai": "^4.4.1",
     "eslint": "^6.5.1",
     "esm": "^3.2.25",
     "jshint": "^2.9.5",
