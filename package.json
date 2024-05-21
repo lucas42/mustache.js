@@ -54,7 +54,7 @@
     "mocha": "^10.4.0",
     "puppeteer": "^22.9.0",
     "rollup": "^4.17.2",
-    "uglify-js": "^3.4.6",
+    "uglify-js": "^3.17.4",
     "zuul": "^3.11.0",
     "zuul-ngrok": "^4.0.0"
   },
