@@ -78,5 +78,5 @@ jobs:
           name: build-output
       - name: npm install and test
         run: |
-          npm install mocha@3 chai@4 esm@3 --no-package-lock
+          npm install mocha@3 chai@3 esm@3 --no-package-lock
           npm run test-unit
